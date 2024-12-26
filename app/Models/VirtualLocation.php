@@ -9,6 +9,15 @@ class VirtualLocation extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'actual_location_id',
+'hajj_office_id',
+'company_id',
+'office_id',
+'name',
+'pilgrims',
+    ];
+
     public function Office(){
     
         return $this->belongsTo(Office::class);

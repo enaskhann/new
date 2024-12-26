@@ -42,7 +42,6 @@ Route::post('/batchStore' , [BatchController::class ,'store']);
 Route::post('/jamaratStore' , [JamaratSchedulesController::class ,'store']);
 
 
-
 Route::get('/ActualLocations' , [ActualLocationController::class ,'index']);
 Route::get('/Batches' , [BatchController::class ,'index']);
 Route::get('/Companies' , [CompanyController::class ,'index']);
@@ -56,6 +55,10 @@ Route::get('/primaryRoads' , [PrimaryRoadController::class ,'index']);
 Route::get('/ResidentialAreas' , [ResidentialAreaController::class ,'index']);
 Route::get('/shapes' , [ShapeController::class ,'index']);
 Route::get('/VirtualLocations' , [VirtualLocationController::class ,'index']);
+Route::post('/CreateVirtualLocations' , [VirtualLocationController::class ,'createVirtualLocations']);
+Route::post('/createbtches' , [BatchController::class ,'createbtches']);
+Route::post('/create' , [BatchController::class ,'create']);
+
 
 
 

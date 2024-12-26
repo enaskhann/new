@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('batches', function (Blueprint $table) {
             $table->id();
+            
             $table->foreignId('virtual_location_id');
             $table->string('code');
-            $table->string('name');
             $table->integer('pilgrims');
             $table->timestamps();
             $table->softDeletes();
